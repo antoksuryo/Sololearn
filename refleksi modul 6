@@ -1,0 +1,247 @@
+#count the character len
+
+nums = [1, 3, 5, 2, 4]
+print(len(nums))
+
+######
+
+str = "some text"
+x = len(str)
+print(x)
+
+###### append to add the end of list
+
+nums = [1, 2, 3]
+nums.append(4)
+print(nums)  
+
+####### insert is to insert to list
+
+words = ["Python", "fun"]
+words.insert(1, "is") # place, text
+print(words) 
+
+####### index search for location in the lis
+
+letters = ['p', 'q', 'r', 's', 'p', 'u']
+print(letters.index('r'))
+print(letters.index('p'))
+print(letters.index('q')) 
+
+########
+
+x = [1, 8, 42, 3]
+
+print(min(x))
+print(max(x))
+
+######## count hitung berapa kali muncul
+#remove hapus # reverse membalikkan
+
+x = [2, 4, 6, 2, 7, 2, 9]
+print(x.count(2))
+
+x.remove(4)
+print(x)
+
+x.reverse()
+print(x)
+
+############
+
+queue = ['John', 'Amy', 'Bob', 'Adam']
+
+
+
+queue.append(input())
+print (list(queue))
+
+###########
+
+nums = [4, 5, 6]
+msg = "Numbers: {0} {1} {2}". format(nums[0], nums[1], nums[2])
+print(msg)
+
+##########
+
+a = "{x}, {y}".format(x=5, y=12)
+print(a)
+
+######### join untuk menggabungkan
+
+x = ", ".join(["spam", "eggs", "ham"])
+print(x)
+#prints "spam, eggs, ham"
+
+######### split untuk memisahkan
+
+str = "some text goes here"
+x = str.split(' ')
+print(x)
+
+######### replace untuk mengganti
+x = "Hello ME"
+print(x.replace("ME", "world")) 
+
+######### upper huruf besar
+
+print("This is a sentence.".upper())
+
+print("AN ALL CAPS SENTENCE".lower())
+
+######## replace keyboard
+
+
+msg = input()
+
+b = msg.replace('#',' ')
+print (b)
+
+
+###### def make function
+
+def hello():
+   print("Hello world!")
+ 
+hello()
+hello()
+hello()
+
+######
+
+def welcome():
+
+   print("Welcome, " + input())
+
+
+
+welcome()
+
+##$#####
+
+def exclamation(word):
+   print(word + "!")
+    
+exclamation("spam")
+
+##########
+
+def exclamation(word):
+   print(word + "!")
+    
+exclamation("spam")
+exclamation("eggs")
+exclamation("python")
+
+##########
+
+def print_sum_twice(x, y):
+   print(x + y)
+   print(x + y)
+
+print_sum_twice(5, 8)
+
+#########
+
+def printBill(text):
+
+  print("======")
+
+  print(text)
+
+  print("======")
+
+
+
+printBill (input())
+
+
+##########
+
+def sum(x, y):
+  return x+y
+
+res = sum(42, 7)
+print(res) 
+
+############
+
+def max(x, y):
+  if x >=y:
+    return x
+  else:
+    return y
+        
+if(max(6, 4) > 10):
+  print("Yes")
+else:
+  print("Nope")
+
+#########
+
+def add_numbers(x, y):
+  total = x + y
+  return total
+  print("This won't be printed")
+
+print(add_numbers(4, 5))
+
+#########
+
+def double(a, b):
+   return [a*2, b*2]
+
+x = double(6, 9)
+print(x)
+
+#########
+
+def area(x, y):
+
+   #your code goes here
+
+   return x*y
+
+
+
+w = int(input())
+
+h = int(input())
+
+
+
+#call the function
+
+print (area(w, h))
+
+########### docstring
+
+def shout(word):
+  """
+  Print a word with an
+  exclamation mark following it.
+  """
+  print(word + "!")
+    
+shout("spam")
+
+
+######### search engine
+
+
+text = input()
+
+word = input()
+
+def search (text, word):
+    if word in text:
+        return ('Word found')
+    else:
+        return ('Word not found')
+
+
+
+
+print(search(text, word))
+
+######
